@@ -42,6 +42,21 @@ int Camatari(){
     
 }
 
+void printareFinala(int contor, int bani, int camata){
+
+    if(contor!=0){
+        printf("Ai iesit din cazino cu %d lei si cu o datorie de %d lei la camatari.\n Daca nu o platesti in 10 zile o sa vina dupa tine! ", bani, camata);
+    }
+     else{
+
+            if(bani<10)
+                printf("Nu mai ai bani sa joci asa ca ai plecat\n\n\n");
+
+        printf("Ai iesit din cazino cu %d lei", bani);
+    }
+
+}
+
 int Dublaj(int bani, int contor, int pierdere, int castig){
    
    srand(time(NULL));
@@ -159,7 +174,8 @@ int main(){
    GameMenu();
    PrintBani(BaniiTai);
    scanf("%d", &jocul);
-   printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+   for(int i=0; i<40; i++)
+        printf("\n");
 
     if(jocul==1){
         BaniiTai-=10;
@@ -177,16 +193,7 @@ int main(){
   }
 
 
-    if(contor!=0){
-        printf("Ai iesit din cazino cu %d lei si cu o datorie de %d lei la camatari.\n Daca nu o platesti in 10 zile o sa vina dupa tine! ", BaniiTai, camata);
-    }
-    else{
-
-            if(BaniiTai<10)
-                printf("Nu mai ai bani sa joci asa ca ai plecat\n\n\n");
-
-        printf("Ai iesit din cazino cu %d lei", BaniiTai);
-    }
+    printareFinala(contor, BaniiTai, camata);
 
     return 0;
 }
