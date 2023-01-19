@@ -173,7 +173,9 @@ int main(){
 
    GameMenu();
    PrintBani(BaniiTai);
+       
    scanf("%d", &jocul);
+       
    for(int i=0; i<40; i++)
         printf("\n");
 
