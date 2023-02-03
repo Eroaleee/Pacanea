@@ -45,7 +45,7 @@ int imprumutaBaniDeLaCamatari(char nume[30]){
 void printareFinala(int contor, int bani, int camata, char nume[30], int baniinitiali){
 
     if(contor!=0){
-        printf("%s, ai intrat in cazino cu %d lei si ai iesit din cazino cu %d lei si cu o datorie de %d lei la camatari.\n Daca nu o platesti in 10 zile o sa vina dupa tine! ",nume,baniinitiali,  bani, camata);
+        printf("%s, ai intrat in cazino cu %d lei si ai iesit din cazino cu %d lei si cu o datorie de %d lei la camatari.\n Daca nu o platesti in 10 zile o sa vina dupa tine!\n\n ",nume,baniinitiali,  bani, camata);
     }
      else{
 
