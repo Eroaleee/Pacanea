@@ -36,14 +36,7 @@ int main()
             BaniiTai = utilizarePacanea(BaniiTai);
         }
 
-        if (BaniiTai < 10)
-        {
-
-            restCamata = BaniiTai;
-            BaniiTai += imprumutaBaniDeLaCamatari(nume);
-            camata += BaniiTai - restCamata;
-            contor++;
-        }
+     verificatBani(BaniiTai); 
     }
 
     scriereFisier(nume, BaniiTai - baniInitiali, camata);
