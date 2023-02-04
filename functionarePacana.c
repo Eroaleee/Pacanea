@@ -116,7 +116,7 @@
  }
 
 
-void verificareBani(int BaniiTai){
+void verificatBani(int BaniiTai){
   
             if (BaniiTai < 10){
               
