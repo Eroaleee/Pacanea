@@ -114,3 +114,15 @@
 
          return bani;
  }
+
+
+void verificareBani(int BaniiTai){
+  
+            if (BaniiTai < 10){
+              
+            restCamata = BaniiTai;
+            BaniiTai += imprumutaBaniDeLaCamatari(nume);
+            camata += BaniiTai - restCamata;
+            contor++;
+        }
+}
